@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 父工程 -->
+    <parent>
+        <groupId>com.github.Alex-2713</groupId>
+        <artifactId>alex-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <!-- 项目信息 -->
+    <artifactId>alex-core</artifactId>
+    <name>核心模块</name>
+    <description>核心模块,是系统开发的基础，是保证系统正常编辑执行的关键</description>
+
+    <!-- 属性定义 -->
+    <properties>
+        <!-- 版本号声明 -->
+    </properties>
+
+    <!-- 依赖信息 -->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <classifier>exec</classifier>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
